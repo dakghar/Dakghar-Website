@@ -1,0 +1,17 @@
+# How It Works section
+# Add, remove, or reorder steps by editing this array
+
+title: "Simpler than ordering food"
+
+steps:
+  - heading: "Follow"
+    hindi: "फॉलो करो"
+    description: "Add your favorite vendors - sabziwala, panipuri, repairs..."
+
+  - heading: "Get Notified"
+    hindi: "डिजिटल घंटी"
+    description: "Digital bell rings when they're in your area"
+
+  - heading: "Connect"
+    hindi: "मिलो"
+    description: "Find them at the landmark and buy what you want"

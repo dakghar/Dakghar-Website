@@ -1,0 +1,12 @@
+# App screenshots section
+# Set enabled to true and add images to display the screenshots section
+
+enabled: false
+
+title: "See Dakghar in Action"
+
+# Add screenshots as items in this array:
+# - url: "/assets/images/screenshot-1.png"
+#   alt: "Dakghar home screen"
+#   caption: "Find vendors near you"
+images: []

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="legal-page">
+    <h1>{{ page.title }}</h1>
+    {% if page.data_key %}
+    {% assign legal_data = site.data.legal[page.data_key] %}
+    {% if legal_data.effective_date or legal_data.last_updated %}
+    <p class="legal-dates">
+        {% if legal_data.effective_date %}Effective Date: {{ legal_data.effective_date }}{% endif %}
+        {% if legal_data.effective_date and legal_data.last_updated %} | {% endif %}
+        {% if legal_data.last_updated %}Last Updated: {{ legal_data.last_updated }}{% endif %}
+    </p>
+    {% endif %}
+    {% endif %}
+    {{ content }}
+</div>

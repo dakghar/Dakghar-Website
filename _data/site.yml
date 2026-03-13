@@ -1,0 +1,24 @@
+# Site-wide company and brand information
+# Edit these values to update branding and contact details across all pages
+
+brand_name: "DAKGHAR"
+app_name: "Dakghar"
+tagline: "Your Neighborhood, Delivered."
+
+# Company details (must match Google Play Console registration exactly)
+company_name: "Visible Chain Technologies Private Limited"
+registered_address: "[PLACEHOLDER: Add registered office address]" # Required for legal pages
+cin: "[PLACEHOLDER: Add CIN number]" # Corporate Identification Number
+duns: "767598484"
+
+# Contact
+contact_email: "support@dakghar.com" # Update with actual support email
+contact_phone: "+919271237273"
+whatsapp_number: "919271237273" # Without + prefix, used in wa.me links
+
+# URLs
+url: "https://dakghar.com"
+play_store_url: "" # Add when app is published on Play Store
+
+# Copyright
+copyright_year: 2026

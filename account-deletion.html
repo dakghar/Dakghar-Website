@@ -1,0 +1,54 @@
+---
+layout: legal
+title: "Account Deletion"
+permalink: /account-deletion/
+data_key: privacy_policy
+---
+
+<h2>How to Delete Your Account</h2>
+<p>Dakghar respects your right to delete your account and associated data. You can request permanent deletion of your account using either of the methods described below.</p>
+
+<h2>Option 1: Delete Through the App</h2>
+<div class="deletion-path">
+  <ol>
+    {% for step in site.data.legal.account_deletion.in_app_path %}
+      <li>{{ step }}</li>
+    {% endfor %}
+  </ol>
+</div>
+
+<h2>Option 2: Request Deletion by Email</h2>
+<div class="deletion-path">
+  <p>Send an email to <a href="mailto:{{ site.data.legal.account_deletion.email }}">{{ site.data.legal.account_deletion.email }}</a> with the subject line <strong>"Account Deletion Request"</strong>.</p>
+  <p>Please include the following in your email:</p>
+  <ul>
+    <li>Your registered phone number</li>
+    <li>Reason for deletion (optional)</li>
+  </ul>
+</div>
+
+<h2>What Gets Deleted</h2>
+<p>When your account is deleted, the following data will be permanently removed:</p>
+<ul>
+  <li>Profile information</li>
+  <li>Phone number</li>
+  <li>Vendor/customer preferences</li>
+  <li>Transaction history</li>
+  <li>Ratings and reviews you submitted</li>
+  <li>Coin balance (forfeited)</li>
+</ul>
+
+<h2>What May Be Retained</h2>
+<p>Certain data may be retained to comply with legal obligations:</p>
+<ul>
+  <li>Transaction records (as required by Indian financial regulations)</li>
+  <li>Security logs (retained for {{ site.data.legal.data_retention.security_logs_days }} days per DPDP Rules 2025)</li>
+  <li>Aggregated, anonymized data that cannot identify you</li>
+</ul>
+
+<h2>Processing Time</h2>
+<p>Account deletion requests are processed within {{ site.data.legal.account_deletion.processing_time }}.</p>
+<p><strong>Note:</strong> Once deletion is processed, it cannot be reversed. Any remaining coin balance will be forfeited.</p>
+
+<h2>Contact Us</h2>
+<p>For questions about account deletion, contact <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a>.</p>

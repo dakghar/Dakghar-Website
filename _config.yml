@@ -1,1 +1,14 @@
-theme: jekyll-theme-minimal
+title: "Dakghar"
+description: "Never miss your favorite street vendors. Get notified when the sabziwala, bhutta wala, pani-puri, or chair repair vendor is nearby."
+url: "https://dakghar.com"
+baseurl: ""
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - documents/
+  - compass_artifact_wf-*.md
+  - README.md
+  - CLAUDE.md
+  - "*.jsonl"

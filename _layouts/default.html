@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} - {{ site.data.site.app_name }}{% else %}{{ site.data.site.app_name }} - {{ site.data.site.tagline }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    {% if page.layout == 'legal' %}
+    <link rel="stylesheet" href="{{ '/assets/css/legal.css' | relative_url }}">
+    {% endif %}
+</head>
+<body>
+    {% include nav.html %}
+    {{ content }}
+    {% include footer.html %}
+</body>
+</html>

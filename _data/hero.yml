@@ -1,0 +1,17 @@
+# Hero section content
+# Edit these values to change the homepage hero
+
+video:
+  youtube_id: "DawXScNj_WA"
+  title: "Meet Gulab - A Vendor's Story"
+  autoplay: true
+  mute: true
+  loop: true
+
+headline: "Your Neighborhood, Delivered."
+vendor_types: "भुट्टा · पानी-पूरी · गन्ने का रस · Chair Repair · और भी..."
+caption: "Meet the vendors who come to YOU"
+
+cta_text: "Get Started on WhatsApp"
+
+launch_message: "Launching Gudi Padwa in Pune. More towns soon."

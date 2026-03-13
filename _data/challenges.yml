@@ -1,0 +1,16 @@
+# Challenges section
+# Edit items to change the "Why this matters" section
+
+title: "Why this matters"
+
+items:
+  - icon: "🚧"
+    text: "Gated communities block access to quality vendors"
+
+  - icon: "🔇"
+    text: "New generation vendors won't shout to sell"
+
+  - icon: "❓"
+    text: "No way to know what's fresh today"
+
+bridge: "Dakghar bridges the gap."

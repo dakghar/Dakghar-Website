@@ -1,0 +1,45 @@
+# Legal information for Privacy Policy, Terms, and Support pages
+# Edit these values before submitting to Google Play Store
+
+# Grievance Officer (required under DPDP Act)
+grievance_officer:
+  name: "[PLACEHOLDER: Grievance Officer name]"
+  designation: "Grievance Officer"
+  email: "grievance@dakghar.com" # Update with actual email
+  response_time: "90 days" # Maximum under DPDP Act
+
+# Account deletion
+account_deletion:
+  email: "delete@dakghar.com" # Update with actual email
+  processing_time: "30 days"
+  in_app_path:
+    - "Open the Dakghar app"
+    - "Go to Settings"
+    - "Tap Account"
+    - "Tap Delete Account"
+    - "Confirm deletion"
+
+# Third-party services (must be disclosed in Privacy Policy)
+third_parties:
+  sms_gateway: "[PLACEHOLDER: SMS gateway provider name]"
+  payment_processors:
+    - "Razorpay"
+    - "PayU"
+  analytics: "[PLACEHOLDER: Analytics SDK name]"
+  cloud_provider: "[PLACEHOLDER: Cloud hosting provider]"
+
+# Data retention
+data_retention:
+  location_days: "[PLACEHOLDER: Number of days location data is retained]"
+  transaction_days: 365 # 1 year for financial records
+  security_logs_days: 365 # Minimum 1 year per DPDP Rules 2025
+  account_data_after_deletion_days: 90 # Grace period for legal obligations
+
+# Policy dates
+privacy_policy:
+  effective_date: "2026-03-14"
+  last_updated: "2026-03-14"
+
+terms:
+  effective_date: "2026-03-14"
+  last_updated: "2026-03-14"

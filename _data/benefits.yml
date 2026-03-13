@@ -1,0 +1,20 @@
+# Benefits section cards
+# Add, remove, or reorder cards by editing this array
+
+title: "Why Dakghar?"
+
+cards:
+  - icon: "🔔"
+    heading: "Never Miss a Visit"
+    hindi: "कभी मिस नहीं"
+    description: "Get notified when your vendors are nearby"
+
+  - icon: "📍"
+    heading: "Know Who's Nearby"
+    hindi: "पास में कौन है"
+    description: "See visit schedules and find nearby vendors by landmark"
+
+  - icon: "✋"
+    heading: "Your Choice"
+    hindi: "आपकी पसंद"
+    description: "See what's available. Select and buy directly."
