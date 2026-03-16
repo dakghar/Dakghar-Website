@@ -1,4 +1,4 @@
-# DAKGHAR Vyaapari - Business Repository
+# Visible Chain Vyaapari - Business Repository
 
 **A Comprehensive Business Document for Stakeholders, Investors, and Leadership**
 
@@ -6,7 +6,7 @@
 
 ## Document Control
 
-**Organization:** DAKGHAR India Pvt. Ltd.  
+**Organization:** Visible Chain Technologies Private Limited  
 **Document Type:** Business Strategy & Operations Repository  
 **Version:** 1.0  
 **Date:** January 2026  
@@ -21,11 +21,11 @@
 
 India's informal retail sector represents a ₹40 trillion market, with street vendors constituting a critical last-mile distribution channel serving over 450 million urban consumers. Despite their economic significance, these 10+ million nomadic vendors operate in an analog world, relying on word-of-mouth, irregular routes, and inefficient customer discovery. Simultaneously, urban consumers waste time waiting for vendors who may never arrive, creating a massive coordination failure costing an estimated ₹50,000 crores annually in lost economic value.
 
-DAKGHAR Vyaapari solves this fundamental market inefficiency by creating India's first digital coordination platform for nomadic street vendors and their customers. We transform the chaotic, unpredictable street vendor ecosystem into an organized, transparent marketplace where vendors announce their routes in advance, customers know when to expect their regular vendors, and real-time location tracking eliminates the guesswork from informal retail.
+Visible Chain Vyaapari solves this fundamental market inefficiency by creating India's first digital coordination platform for nomadic street vendors and their customers. We transform the chaotic, unpredictable street vendor ecosystem into an organized, transparent marketplace where vendors announce their routes in advance, customers know when to expect their regular vendors, and real-time location tracking eliminates the guesswork from informal retail.
 
 ### The Solution
 
-DAKGHAR is a two-sided mobile marketplace connecting nomadic vendors (vegetable sellers, fruit vendors, dairy suppliers, fish merchants) with customers in residential neighborhoods. Vendors use our platform to:
+Visible Chain is a two-sided mobile marketplace connecting nomadic vendors (vegetable sellers, fruit vendors, dairy suppliers, fish merchants) with customers in residential neighborhoods. Vendors use our platform to:
 
 1. **Schedule visits** to specific localities, announcing in advance when they'll arrive
 2. **Broadcast live location** so customers can track their approach in real-time
@@ -306,7 +306,7 @@ Remarkably, no platform currently addresses the nomadic street vendor coordinati
 
 Being first to market with vendor coordination gives us:
 
-- **Brand recognition**: "DAKGHAR" becomes synonymous with vendor tracking
+- **Brand recognition**: "Visible Chain" becomes synonymous with vendor tracking
 - **Network effects**: First platform to achieve critical mass in a city wins
 - **Data moats**: Learning vendor routing patterns creates optimization advantages
 - **Partnership opportunities**: Municipal governments seeking vendor formalization
@@ -345,7 +345,7 @@ Our event-sourced backend provides competitive advantages:
 
 **Primary Value: Revenue Growth**
 
-Vendors using DAKGHAR increase daily revenue by 20-30% through:
+Vendors using Visible Chain increase daily revenue by 20-30% through:
 
 1. **Efficient Route Planning**: Visit only localities with confirmed demand via invites
 2. **Reduced Travel Time**: Optimize routes across 3-5 localities instead of random wandering
@@ -354,12 +354,12 @@ Vendors using DAKGHAR increase daily revenue by 20-30% through:
 
 **Example:**
 - Traditional vendor: 8 locality visits, 3 have customers waiting, ₹800 revenue, 4 hours
-- DAKGHAR vendor: 5 locality visits, 5 have customers waiting, ₹1,200 revenue, 3 hours
+- Visible Chain vendor: 5 locality visits, 5 have customers waiting, ₹1,200 revenue, 3 hours
 - **Result**: 50% more revenue per hour, finish work earlier
 
 **Secondary Value: Professional Brand**
 
-Using DAKGHAR signals professionalism:
+Using Visible Chain signals professionalism:
 
 - **Verified badge**: Differentiation from unverified competitors
 - **Predictable service**: Customers recommend reliable vendors to neighbors
@@ -388,7 +388,7 @@ Know exactly when vendors will arrive:
 
 **Example:**
 - Traditional customer: Check outside 3 times hoping vendor arrives, miss them anyway
-- DAKGHAR customer: Get notification at 5:30 PM, step outside, vendor arrives at 5:35 PM
+- Visible Chain customer: Get notification at 5:30 PM, step outside, vendor arrives at 5:35 PM
 - **Result**: Zero wasted time, never miss preferred vendors
 
 **Secondary Value: Vendor Discovery**
@@ -404,7 +404,7 @@ Find best vendors easily:
 
 Strengthen connections with regular vendors:
 
-- **Consistent Service**: Vendors who use DAKGHAR are more reliable
+- **Consistent Service**: Vendors who use Visible Chain are more reliable
 - **Communication**: Can message vendors through platform (future feature)
 - **Loyalty Benefits**: Regular customers might get preferential treatment
 - **Community**: Feel good supporting vendors who invest in technology
@@ -727,8 +727,8 @@ Cities must meet minimum thresholds:
 Consider franchising for smaller cities:
 
 - Local entrepreneurs manage city operations
-- DAKGHAR provides technology, training, brand
-- Revenue share: 70% franchisee, 30% DAKGHAR
+- Visible Chain provides technology, training, brand
+- Revenue share: 70% franchisee, 30% Visible Chain
 - Reduces capital requirements, accelerates expansion
 
 ---
@@ -737,7 +737,7 @@ Consider franchising for smaller cities:
 
 ### Brand Positioning
 
-**Brand Name: DAKGHAR (डाकघर)**
+**Brand Name: Visible Chain (डाकघर)**
 
 Means "Post Office" in Hindi - symbolizes reliable delivery and communication. Evokes trust, punctuality, and government-endorsed reliability.
 
@@ -803,7 +803,7 @@ Means "Post Office" in Hindi - symbolizes reliable delivery and communication. E
 **Primary Channels:**
 
 1. **Vendor-Driven Acquisition** (Organic)
-   - Vendors tell regular customers "Track me on DAKGHAR"
+   - Vendors tell regular customers "Track me on Visible Chain"
    - QR codes on vendor carts
    - In-app incentives for vendors who recruit customers
    - Cost: ₹20/customer, Conversion: 25%
@@ -830,21 +830,21 @@ Means "Post Office" in Hindi - symbolizes reliable delivery and communication. E
 - Facebook community groups by locality
 - Instagram Stories ads
 - Newspaper inserts in residential areas
-- Partnerships with grocery delivery apps (Zepto, Blinkit) - "Want fresh? Use DAKGHAR"
+- Partnerships with grocery delivery apps (Zepto, Blinkit) - "Want fresh? Use Visible Chain"
 
 ### Content Marketing
 
 **Vendor-Focused Content:**
 
 1. **Success Stories** (Video Testimonials)
-   - "How Ramesh increased sales 30% using DAKGHAR"
+   - "How Ramesh increased sales 30% using Visible Chain"
    - 3-minute videos, Hindi with regional language subtitles
    - Distributed via WhatsApp, YouTube
 
 2. **Educational Content**
    - "10 Tips for Better Routes" (blog posts)
    - "Understanding Your Customer Demand" (webinars)
-   - Positions DAKGHAR as business growth partner
+   - Positions Visible Chain as business growth partner
 
 3. **Community Building**
    - Monthly vendor meetups in each city
@@ -859,7 +859,7 @@ Means "Post Office" in Hindi - symbolizes reliable delivery and communication. E
    - Recipe videos using vendor produce
 
 2. **Social Media Campaigns**
-   - #MyDakgharVendor customer stories
+   - #MyVisible ChainVendor customer stories
    - Contests: "Best Vendor Review" wins prizes
    - User-generated content showcasing vendors
 
@@ -880,7 +880,7 @@ Means "Post Office" in Hindi - symbolizes reliable delivery and communication. E
 2. **Microfinance Institutions**
    - Partner with lenders offering vendor loans
    - Data on vendor routes helps assess creditworthiness
-   - Co-marketing: "Get loan + DAKGHAR subscription"
+   - Co-marketing: "Get loan + Visible Chain subscription"
 
 3. **Payment Platforms**
    - Paytm, PhonePe partnership for coin purchases
@@ -889,7 +889,7 @@ Means "Post Office" in Hindi - symbolizes reliable delivery and communication. E
 
 4. **NGOs & Social Enterprises**
    - Organizations supporting street vendors
-   - Deploy DAKGHAR in their vendor communities
+   - Deploy Visible Chain in their vendor communities
    - Corporate CSR funding for vendor training
 
 ---
@@ -1413,7 +1413,7 @@ Temptation to add e-commerce, inventory management, credit features could distra
 **Severity:** Medium | **Probability:** Low
 
 **Description:**
-If overall vendor incomes decline (economic recession, policy changes), they cut discretionary spending like DAKGHAR subscription.
+If overall vendor incomes decline (economic recession, policy changes), they cut discretionary spending like Visible Chain subscription.
 
 **Mitigation:**
 - Low absolute costs (₹200/month sustainable even in downturn)
@@ -1494,7 +1494,7 @@ If <60% achieved → Pivot product/strategy or shut down
 ✅ 1,000,000 active customers  
 ✅ ₹10 Cr+ annual revenue  
 ✅ EBITDA positive (profitable at company level)  
-✅ Clear category leadership ("DAKGHAR for vendors" = "Uber for rides")
+✅ Clear category leadership ("Visible Chain for vendors" = "Uber for rides")
 
 **Stretch Goals:**
 
@@ -1620,7 +1620,7 @@ If <60% achieved → Pivot product/strategy or shut down
 - Earn respect (vendors often looked down upon)
 - Prepare son to take over modern, professional business
 
-**DAKGHAR Usage:**
+**Visible Chain Usage:**
 - Creates schedule Sunday evening for week ahead (3 localities × 2 times/day)
 - Goes live every morning 6-9 AM and evening 5-7 PM
 - Rings bell upon arriving at each locality
@@ -1660,7 +1660,7 @@ If <60% achieved → Pivot product/strategy or shut down
 - Feel good about supporting local economy
 - Impress mother-in-law with cooking skills
 
-**DAKGHAR Usage:**
+**Visible Chain Usage:**
 - Checks app Saturday to see which vendors visiting Sunday
 - Sets notifications for 2-3 preferred vegetable vendors
 - Creates standing invite for fish vendor every Wednesday
@@ -1700,7 +1700,7 @@ If <60% achieved → Pivot product/strategy or shut down
 - Fresh food for health (doctor recommends vegetables)
 - Stay engaged with changing world (technology adoption)
 
-**DAKGHAR Usage:**
+**Visible Chain Usage:**
 - Son installed app, showed her how to use
 - Keeps app open all day (doesn't understand notifications fully)
 - Recognizes vendor faces in photos, feels comfortable
@@ -1746,7 +1746,7 @@ If <60% achieved → Pivot product/strategy or shut down
 
 **Ward:** Administrative division in Indian cities (Pune has 50+ wards, each with 10-30 localities)
 
-**Ward:** DAKGHAR focuses on ward-level coordination since vendors typically serve 1-3 adjacent wards
+**Ward:** Visible Chain focuses on ward-level coordination since vendors typically serve 1-3 adjacent wards
 
 ### References & Data Sources
 
@@ -1768,4 +1768,4 @@ If <60% achieved → Pivot product/strategy or shut down
 **Document Classification:** Confidential  
 **Last Updated:** January 2026  
 **Version:** 1.0  
-**Contact:** founders@dakghar.in
+**Contact:** founders@Visible Chain.in

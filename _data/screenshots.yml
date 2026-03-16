@@ -3,10 +3,10 @@
 
 enabled: false
 
-title: "See Dakghar in Action"
+title: "See Visible Chain in Action"
 
 # Add screenshots as items in this array:
 # - url: "/assets/images/screenshot-1.png"
-#   alt: "Dakghar home screen"
+#   alt: "Visible Chain home screen"
 #   caption: "Find vendors near you"
 images: []

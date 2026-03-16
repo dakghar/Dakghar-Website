@@ -1,8 +1,8 @@
 # Site-wide company and brand information
 # Edit these values to update branding and contact details across all pages
 
-brand_name: "DAKGHAR"
-app_name: "Dakghar"
+brand_name: "Visible Chain"
+app_name: "Visible Chain"
 tagline: "Your Neighborhood, Delivered."
 
 # Company details (must match Google Play Console registration exactly)
@@ -12,12 +12,12 @@ cin: "[PLACEHOLDER: Add CIN number]" # Corporate Identification Number
 duns: "767598484"
 
 # Contact
-contact_email: "support@dakghar.com" # Update with actual support email
+contact_email: "support@VisibleChain.com" # Update with actual support email
 contact_phone: "+919271237273"
 whatsapp_number: "919271237273" # Without + prefix, used in wa.me links
 
 # URLs
-url: "https://dakghar.com"
+url: "https://VisibleChain.com"
 play_store_url: "" # Add when app is published on Play Store
 
 # Copyright

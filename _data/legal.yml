@@ -5,15 +5,15 @@
 grievance_officer:
   name: "[PLACEHOLDER: Grievance Officer name]"
   designation: "Grievance Officer"
-  email: "grievance@dakghar.com" # Update with actual email
+  email: "grievance@VisibleChain.com" # Update with actual email
   response_time: "90 days" # Maximum under DPDP Act
 
 # Account deletion
 account_deletion:
-  email: "delete@dakghar.com" # Update with actual email
+  email: "delete@VisibleChain.com" # Update with actual email
   processing_time: "30 days"
   in_app_path:
-    - "Open the Dakghar app"
+    - "Open the Visible Chain app"
     - "Go to Settings"
     - "Tap Account"
     - "Tap Delete Account"
