@@ -1,16 +1,19 @@
-# Challenges section
-# Edit items to change the "Why this matters" section
+# Challenges section — the old problem ghantiGo solves
 
-title: "Why this matters"
+title: "Why the old ghanti stopped reaching"
+subtitle: "Every street vendor and service provider had a way to announce themselves. Today, that voice gets lost."
 
 items:
-  - icon: "🚧"
-    text: "Gated communities block access to quality vendors"
+  - icon: "🛎️"
+    text: "Their physical ghanti can't reach the 5th floor anymore."
 
-  - icon: "🔇"
-    text: "New generation vendors won't shout to sell"
+  - icon: "🏢"
+    text: "Gated societies, high-rises, and busy roads block the old ways of announcing."
 
-  - icon: "❓"
-    text: "No way to know what's fresh today"
+  - icon: "🗑️"
+    text: "So we buy new instead of repairing — or miss fresh local bargains."
 
-bridge: "Visible Chain bridges the gap."
+  - icon: "🚗"
+    text: "Driving to the city wastes time, fuel, and parking — and adds to traffic."
+
+bridge: "ghantiGo brings the neighborhood bell back — on your phone."

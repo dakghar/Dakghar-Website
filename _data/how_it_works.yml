@@ -1,17 +1,33 @@
 # How It Works section
 # Add, remove, or reorder steps by editing this array
 
-title: "Simpler than ordering food"
+title: "How ghantiGo works"
+subtitle: "Two sides of the same lane. Sellers go live. Customers get the ghanti."
 
-steps:
+customer_title: "For customers"
+customer_steps:
   - heading: "Follow"
     hindi: "फॉलो करो"
-    description: "Add your favorite vendors - sabziwala, panipuri, repairs..."
+    description: "Follow the sellers, repairwale, and services you care about — kulfi, sabzi, bike wash, chair repair."
 
-  - heading: "Get Notified"
-    hindi: "डिजिटल घंटी"
-    description: "Digital bell rings when they're in your area"
+  - heading: "Get the ghanti"
+    hindi: "फोन पे घंटी"
+    description: "When they go LIVE near your area, ghantiGo rings a digital bell on your phone."
 
-  - heading: "Connect"
-    hindi: "मिलो"
-    description: "Find them at the landmark and buy what you want"
+  - heading: "Walk over"
+    hindi: "जाके ले आओ"
+    description: "They’re right there at your gate or chowk. Walk over, choose, buy, or get it repaired."
+
+vendor_title: "For sellers & service providers"
+vendor_steps:
+  - heading: "Upload today"
+    hindi: "आज का सामना"
+    description: "Share a photo of what you’re selling or the repairs you can do today."
+
+  - heading: "Record voice"
+    hindi: "आवाज़ बोलो"
+    description: "Record a short voice broadcast in your own language and style."
+
+  - heading: "Go LIVE"
+    hindi: "लाइव जाओ"
+    description: "Tap Go LIVE when you arrive. Customers who follow you get the digital ghanti instantly."

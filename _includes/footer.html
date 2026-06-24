@@ -1,12 +1,32 @@
 <footer class="footer">
     <div class="container">
+        <div class="footer-brand">
+            <p class="footer-app-name">{{ site.data.site.brand_name }}</p>
+            <p class="footer-company">A product of {{ site.data.site.company_name }}</p>
+        </div>
+
         <div class="footer-links">
             <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a>
             <a href="{{ '/terms/' | relative_url }}">Terms of Service</a>
             <a href="{{ '/account-deletion/' | relative_url }}">Account Deletion</a>
             <a href="{{ '/support/' | relative_url }}">Support</a>
         </div>
-        <p class="footer-company">{{ site.data.site.company_name }}</p>
+
+        <div class="footer-social">
+            {% if site.data.site.youtube_channel %}
+            <a href="{{ site.data.site.youtube_channel }}" target="_blank" rel="noopener">YouTube</a>
+            {% endif %}
+            {% if site.data.site.twitter_x %}
+            <a href="{{ site.data.site.twitter_x }}" target="_blank" rel="noopener">X</a>
+            {% endif %}
+            {% if site.data.site.facebook %}
+            <a href="{{ site.data.site.facebook }}" target="_blank" rel="noopener">Facebook</a>
+            {% endif %}
+            {% if site.data.site.linkedin %}
+            <a href="{{ site.data.site.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+            {% endif %}
+        </div>
+
         <p class="footer-content">By <a href="https://www.songpoem.com/" target="_blank" rel="noopener">SONGPOEM</a> | Pune, India | &copy; {{ site.data.site.copyright_year }}</p>
     </div>
 </footer>

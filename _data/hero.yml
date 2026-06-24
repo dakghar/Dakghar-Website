@@ -2,16 +2,21 @@
 # Edit these values to change the homepage hero
 
 video:
-  youtube_id: "DawXScNj_WA"
-  title: "Meet Gulab - A Vendor's Story"
+  youtube_id: "[UPDATE: A3FuaDJOvzU or preferred landing page video ID]"
+  title: "ghantiGo - Your Local Vendors Are Now Online"
   autoplay: true
   mute: true
   loop: true
 
-headline: "Your Neighborhood, Delivered."
-vendor_types: "भुट्टा · पानी-पूरी · गन्ने का रस · Chair Repair · और भी..."
-caption: "Meet the vendors who come to YOU"
+headline_hindi: "Aapke feriwale ab online hain."
+headline: "Your local vendors are now online."
 
-cta_text: "Get Started on WhatsApp"
+subhead: "Kulfiwala, repairwala, sabziwala, bike washer, ganne ka ras — when they come near your gate, ghantiGo rings their digital bell on your phone."
 
-launch_message: "Launching Gudi Padwa in Pune. More towns soon."
+vendor_types: "भुट्टा · पानी-पूरी · कुल्फी · रिपेयर · सब्जी · गन्ने का रस · बाइक वॉश · और भी..."
+
+caption: "See how ghantiGo gives every moving seller a digital voice"
+
+cta_text: "Join ghantiGo on WhatsApp"
+
+launch_message: "Launching in Pune. More towns and villages soon."

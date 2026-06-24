@@ -1,24 +1,33 @@
 # Site-wide company and brand information
 # Edit these values to update branding and contact details across all pages
 
-brand_name: "Visible Chain"
-app_name: "Visible Chain"
-tagline: "Your Neighborhood, Delivered."
+brand_name: "ghantiGo"
+app_name: "ghantiGo"
+tagline: "Aapke feriwale ab online hain."
 
-# Company details (must match Google Play Console registration exactly)
+# Company details (must match Google Play Console registration and DLT records exactly)
 company_name: "Visible Chain Technologies Private Limited"
-registered_address: "[PLACEHOLDER: Add registered office address]" # Required for legal pages
-cin: "[PLACEHOLDER: Add CIN number]" # Corporate Identification Number
+registered_address: "[UPDATE: Add registered office address]" # Required for legal pages and DLT
+cin: "U62010PN2024PTC235236" # Corporate Identification Number (required for DLT)
 duns: "767598484"
 
-# Contact
-contact_email: "support@VisibleChain.com" # Update with actual support email
+# Contact (update with real values before publishing)
+contact_email: "[UPDATE: support@ghantigo.com]" # Update with actual support email
 contact_phone: "+919271237273"
 whatsapp_number: "919271237273" # Without + prefix, used in wa.me links
 
-# URLs
-url: "https://VisibleChain.com"
-play_store_url: "" # Add when app is published on Play Store
+# URLs (update with real values)
+url: "https://www.ghantigo.com"
+play_store_url: "[UPDATE: Add Play Store URL when published]"
+
+# Social / external links
+youtube_channel: "https://www.youtube.com/@ghantiGo"
+twitter_x: "https://x.com/ghantiGoApp"
+facebook: "https://www.facebook.com/ghantiGoApp/"
+linkedin: "[UPDATE: Add LinkedIn page URL]"
+
+# SMS header registered for DLT (internal use; not displayed on public website)
+sms_header: "GHANTI"
 
 # Copyright
 copyright_year: 2026

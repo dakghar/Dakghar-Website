@@ -1,12 +1,15 @@
 ---
 layout: default
 ---
-<!-- Hero Section: Emotional Hook + Video -->
+<!-- Hero Section: Digital Ghanti for Moving Sellers -->
 <section class="hero">
     <div class="container">
+        <p class="brand-tagline">{{ site.data.site.tagline }}</p>
         <div class="brand">{{ site.data.site.brand_name }}</div>
-        <h1>{{ site.data.hero.headline }}</h1>
+        <h1>{{ site.data.hero.headline_hindi }}</h1>
+        <h2 class="hero-subheadline">{{ site.data.hero.headline }}</h2>
         <p class="vendor-types">{{ site.data.hero.vendor_types }}</p>
+        <p class="hero-description">{{ site.data.hero.subhead }}</p>
 
         <div class="video-hero-container">
             <iframe
@@ -21,16 +24,85 @@ layout: default
 
         {% include whatsapp_btn.html %}
         <p class="launch-location">{{ site.data.hero.launch_message }}</p>
+
+        <p class="company-note">{{ site.data.site.brand_name }} is a product of {{ site.data.site.company_name }}.</p>
     </div>
 </section>
 
-<!-- Benefits Section: Why You'll Love It -->
-<section class="section section-white">
+<!-- What ghantiGo Is / Is Not -->
+<section class="section section-warm what-is-section">
+    <div class="container">
+        <h2>Not a map. Not a shop. Just a digital ghanti.</h2>
+        <div class="what-is-content">
+            <p>
+                Google Maps tells you <strong>where</strong> a shop is. ghantiGo tells you <strong>when</strong> the kulfi cart,
+                repairwala, or bike washer is actually at your gate.
+            </p>
+            <p>
+                ghantiGo is a digital notification platform operated by <strong>{{ site.data.site.company_name }}</strong>.
+                We connect mobile local sellers and service providers — such as repairwale, kulfi carts, sabziwalas,
+                sugarcane juice carts, bike washers, and village feriwale — with nearby customers through live alerts
+                and voice broadcasts.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Story / Challenge Section: Why the Old Ghanti Stopped Reaching -->
+<section class="section section-white challenge-section">
+    <div class="container">
+        <h2>{{ site.data.challenges.title }}</h2>
+        {% if site.data.challenges.subtitle %}<p class="section-subtitle">{{ site.data.challenges.subtitle }}</p>{% endif %}
+        <div class="challenge-items">
+            {% for item in site.data.challenges.items %}
+            <div class="challenge-item">
+                <span class="challenge-icon">{{ item.icon }}</span>
+                <p>{{ item.text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <p class="challenge-bridge">{{ site.data.challenges.bridge }}</p>
+    </div>
+</section>
+
+<!-- Use-Case Examples -->
+<section class="section section-warm use-cases-section">
+    <div class="container">
+        <h2>For every moving seller & service</h2>
+        <p class="section-subtitle">ghantiGo works for anyone who comes to your lane, chowk, society, or village — instead of waiting for you to find them.</p>
+        <div class="use-cases-grid">
+            <div class="use-case-card"><span class="use-case-icon">🛠️</span><h4>Repairwala</h4><p>Mixer, chair, cycle, phone — fix near home</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🍦</span><h4>Kulfi cart</h4><p>Frozen treats that come to your gate</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🧃</span><h4>Sugarcane juice</h4><p>Fresh juice cart on the move</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🥬</span><h4>Sabzi & farm tempo</h4><p>Better prices without the middleman</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🚿</span><h4>Mobile bike washer</h4><p>Service van at your society</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🚚</span><h4>Village feriwala</h4><p>Today your village, tomorrow the next</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- Benefits Section: Split by Persona -->
+<section class="section section-white benefits-section">
     <div class="container">
         <h2>{{ site.data.benefits.title }}</h2>
+        <p class="section-subtitle">{{ site.data.benefits.subtitle }}</p>
+
+        <h3 class="persona-title customer-title">{{ site.data.benefits.customer_title }}</h3>
         <div class="benefits-grid">
-            {% for card in site.data.benefits.cards %}
+            {% for card in site.data.benefits.customer_cards %}
             <div class="benefit-card">
+                <div class="benefit-icon">{{ card.icon }}</div>
+                <h3>{{ card.heading }}</h3>
+                <p class="hindi">{{ card.hindi }}</p>
+                <p>{{ card.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        <h3 class="persona-title vendor-title">{{ site.data.benefits.vendor_title }}</h3>
+        <div class="benefits-grid">
+            {% for card in site.data.benefits.vendor_cards %}
+            <div class="benefit-card vendor-card">
                 <div class="benefit-icon">{{ card.icon }}</div>
                 <h3>{{ card.heading }}</h3>
                 <p class="hindi">{{ card.hindi }}</p>
@@ -41,21 +113,83 @@ layout: default
     </div>
 </section>
 
-<!-- How It Works: Simplified Steps -->
-<section class="section section-warm">
+<!-- How It Works: Dual Flow -->
+<section class="section section-warm how-it-works-section">
     <div class="container">
         <h2>{{ site.data.how_it_works.title }}</h2>
-        <div class="flow-steps">
-            {% for step in site.data.how_it_works.steps %}
-            <div class="flow-step">
-                <div class="step-number">{{ forloop.index }}</div>
-                <div class="step-content">
-                    <h4>{{ step.heading }}</h4>
-                    <p class="hindi">{{ step.hindi }}</p>
-                    <p>{{ step.description }}</p>
+        <p class="section-subtitle">{{ site.data.how_it_works.subtitle }}</p>
+
+        <div class="dual-flow">
+            <div class="flow-block">
+                <h3 class="flow-block-title">{{ site.data.how_it_works.customer_title }}</h3>
+                <div class="flow-steps">
+                    {% for step in site.data.how_it_works.customer_steps %}
+                    <div class="flow-step">
+                        <div class="step-number">{{ forloop.index }}</div>
+                        <div class="step-content">
+                            <h4>{{ step.heading }}</h4>
+                            <p class="hindi">{{ step.hindi }}</p>
+                            <p>{{ step.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
-            {% endfor %}
+
+            <div class="flow-block">
+                <h3 class="flow-block-title">{{ site.data.how_it_works.vendor_title }}</h3>
+                <div class="flow-steps">
+                    {% for step in site.data.how_it_works.vendor_steps %}
+                    <div class="flow-step vendor-step">
+                        <div class="step-number">{{ forloop.index }}</div>
+                        <div class="step-content">
+                            <h4>{{ step.heading }}</h4>
+                            <p class="hindi">{{ step.hindi }}</p>
+                            <p>{{ step.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Future Vision Section -->
+<section class="section section-white vision-section">
+    <div class="container">
+        <h2>Built for every kind of moving commerce</h2>
+        <p class="section-subtitle">ghantiGo starts with your lane and chowk. The future is bigger.</p>
+        <div class="vision-grid">
+            <div class="vision-card">
+                <span class="vision-icon">🚐</span>
+                <h4>Brand-authorized service vans</h4>
+                <p>Authorized repair and wash rounds announced neighborhood by neighborhood.</p>
+            </div>
+            <div class="vision-card">
+                <span class="vision-icon">🚚</span>
+                <h4>Direct-to-consumer tempos</h4>
+                <p>Farmers and makers selling directly, skipping middlemen and shops.</p>
+            </div>
+            <div class="vision-card">
+                <span class="vision-icon">🏘️</span>
+                <h4>Village-to-village feriwale</h4>
+                <p>Rotating sellers can let every village know “today is your day.”</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Values / Movement Section -->
+<section class="section section-warm values-section">
+    <div class="container">
+        <h2>Walk a little. Fix, eat, save.</h2>
+        <p class="section-subtitle">ghantiGo makes local commerce work again — for your wallet, your neighborhood, and the planet.</p>
+        <div class="values-grid">
+            <div class="value-item"><span>💰</span><p><strong>Save money</strong> by buying local and repairing instead of replacing.</p></div>
+            <div class="value-item"><span>🚗</span><p><strong>Skip city trips</strong> and the traffic, parking, and fuel they waste.</p></div>
+            <div class="value-item"><span>🌍</span><p><strong>Waste less</strong> — one repair at a time, one less item in the landfill.</p></div>
+            <div class="value-item"><span>🤝</span><p><strong>Support local</strong> feriwale, repairwale, and moving sellers you already know.</p></div>
         </div>
     </div>
 </section>
@@ -77,28 +211,12 @@ layout: default
 </section>
 {% endif %}
 
-<!-- Challenge Section: Problem -->
-<section class="section section-white challenge-section">
-    <div class="container">
-        <h2>{{ site.data.challenges.title }}</h2>
-        <div class="challenge-items">
-            {% for item in site.data.challenges.items %}
-            <div class="challenge-item">
-                <span class="challenge-icon">{{ item.icon }}</span>
-                <p>{{ item.text }}</p>
-            </div>
-            {% endfor %}
-        </div>
-        <p class="challenge-bridge">{{ site.data.challenges.bridge }}</p>
-    </div>
-</section>
-
 <!-- Final CTA Section -->
 <section class="cta-section">
     <div class="container">
         <h2>Join {{ site.data.site.app_name }}</h2>
         {% include whatsapp_btn.html %}
-        <p class="cta-subtext">Free to join. Download our app.</p>
+        <p class="cta-subtext">Free to join. Get a digital ghanti for your local vendors.</p>
         <p class="cta-location">{{ site.data.hero.launch_message }}</p>
     </div>
 </section>
