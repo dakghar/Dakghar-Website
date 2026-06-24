@@ -2,11 +2,11 @@
 # Edit these values to change the homepage hero
 
 video:
-  youtube_id: "[UPDATE: A3FuaDJOvzU or preferred landing page video ID]"
-  title: "ghantiGo - Your Local Vendors Are Now Online"
-  autoplay: true
-  mute: true
-  loop: true
+  youtube_id: "A3FuaDJOvzU"
+  title: "ghantiGo story — the digital bell for moving sellers"
+  autoplay: false
+  mute: false
+  loop: false
 
 headline_hindi: "Aapke feriwale ab online hain."
 headline: "Your local vendors are now online."

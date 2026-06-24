@@ -20,19 +20,35 @@ layout: default
         <h2>Not a map. Not a shop. Just a digital ghanti.</h2>
         <div class="what-is-content">
             <p>
-                Google Maps tells you <strong>where</strong> a shop is. ghantiGo tells you <strong>when</strong> the kulfi cart,
+                A map tells you <strong>where</strong> a shop is. ghantiGo tells you <strong>when</strong> the kulfi cart,
                 repairwala, or bike washer is actually at your gate.
             </p>
             <p>
-                ghantiGo is a digital notification platform with mobile apps for customers and moving sellers.
-                It is operated by <strong>{{ site.data.site.company_name }}</strong>.
+                ghantiGo is a digital notification platform with mobile apps for customers and moving sellers,
+                built by <strong>{{ site.data.site.company_name }}</strong>.
             </p>
         </div>
     </div>
 </section>
 
+<!-- Explainer Video -->
+<section class="section section-white video-section">
+    <div class="container">
+        <h2>{{ site.data.hero.caption }}</h2>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/{{ site.data.hero.video.youtube_id }}"
+                title="{{ site.data.hero.video.title }}"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
 <!-- Story / Challenge Section: Why the Old Ghanti Stopped Reaching -->
-<section class="section section-white challenge-section">
+<section class="section section-warm challenge-section">
     <div class="container">
         <h2>{{ site.data.challenges.title }}</h2>
         {% if site.data.challenges.subtitle %}<p class="section-subtitle">{{ site.data.challenges.subtitle }}</p>{% endif %}
