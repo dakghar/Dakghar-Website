@@ -1,0 +1,25 @@
+# Vendor / customer photo testimonials
+# Drop images into assets/images/vendors/ and list them here.
+# caption supports Hindi or English.
+
+enabled: true
+
+title: "Meet the feriwale"
+subtitle: "Real people, real lanes. ghantiGo helps them announce their arrival — and helps customers find them."
+
+items:
+  - image: "/assets/images/vendors/vendor-1.jpg"
+    alt: "A local vendor with his cart"
+    caption: "The repairwala who fixes mixers and fans near your lane."
+
+  - image: "/assets/images/vendors/vendor-2.jpg"
+    alt: "Kulfiwala with his cart"
+    caption: "The kulfi cart that comes to your gate on summer evenings."
+
+  - image: "/assets/images/vendors/vendor-3.jpg"
+    alt: "Sabziwala arranging fresh vegetables"
+    caption: "Fresh sabzi at your chowk — better prices, no middleman."
+
+  - image: "/assets/images/vendors/vendor-4.jpg"
+    alt: "Mobile service provider"
+    caption: "The bike washer who visits your society every weekend."

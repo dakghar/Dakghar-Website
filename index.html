@@ -22,6 +22,8 @@ layout: default
         </div>
         <p class="video-caption">{{ site.data.hero.caption }}</p>
 
+        <p class="early-access-badge">🚀 Early access in Pune — WhatsApp us to join</p>
+
         {% include whatsapp_btn.html %}
         <p class="launch-location">{{ site.data.hero.launch_message }}</p>
 
@@ -155,6 +157,26 @@ layout: default
     </div>
 </section>
 
+<!-- Vendor Testimonials -->
+{% if site.data.testimonials.enabled %}
+<section class="section section-white">
+    <div class="container">
+        <h2>{{ site.data.testimonials.title }}</h2>
+        <p class="section-subtitle">{{ site.data.testimonials.subtitle }}</p>
+        <div class="use-cases-grid">
+            {% for item in site.data.testimonials.items %}
+            <div class="use-case-card">
+                <div class="use-case-photo">
+                    <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
+                </div>
+                {% if item.caption %}<p class="caption">{{ item.caption }}</p>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Future Vision Section -->
 <section class="section section-white vision-section">
     <div class="container">
@@ -214,9 +236,9 @@ layout: default
 <!-- Final CTA Section -->
 <section class="cta-section">
     <div class="container">
-        <h2>Join {{ site.data.site.app_name }}</h2>
+        <h2>Get {{ site.data.site.app_name }} early access</h2>
         {% include whatsapp_btn.html %}
-        <p class="cta-subtext">Free to join. Get a digital ghanti for your local vendors.</p>
+        <p class="cta-subtext">Early access only. WhatsApp us to join before public launch.</p>
         <p class="cta-location">{{ site.data.hero.launch_message }}</p>
     </div>
 </section>
