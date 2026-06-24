@@ -41,8 +41,9 @@ layout: default
                 repairwala, or bike washer is actually at your gate.
             </p>
             <p>
-                ghantiGo is a digital notification platform operated by <strong>{{ site.data.site.company_name }}</strong>.
-                We connect mobile local sellers and service providers — such as repairwale, kulfi carts, sabziwalas,
+                ghantiGo is a digital notification platform with mobile apps for customers and moving sellers.
+                It is operated by <strong>{{ site.data.site.company_name }}</strong>.
+                We connect moving sellers and service providers — such as repairwale, kulfi carts, sabziwalas,
                 sugarcane juice carts, bike washers, and village feriwale — with nearby customers through live alerts
                 and voice broadcasts.
             </p>
@@ -89,7 +90,10 @@ layout: default
         <h2>{{ site.data.benefits.title }}</h2>
         <p class="section-subtitle">{{ site.data.benefits.subtitle }}</p>
 
-        <h3 class="persona-title customer-title">{{ site.data.benefits.customer_title }}</h3>
+        <div class="persona-block customer-block">
+          <h3 class="persona-title customer-title">{{ site.data.benefits.customer_title }}</h3>
+          <p class="persona-app-label">{{ site.data.benefits.customer_subtitle }}</p>
+        </div>
         <div class="benefits-grid">
             {% for card in site.data.benefits.customer_cards %}
             <div class="benefit-card">
@@ -101,7 +105,10 @@ layout: default
             {% endfor %}
         </div>
 
-        <h3 class="persona-title vendor-title">{{ site.data.benefits.vendor_title }}</h3>
+        <div class="persona-block vendor-block">
+          <h3 class="persona-title vendor-title">{{ site.data.benefits.vendor_title }}</h3>
+          <p class="persona-app-label">{{ site.data.benefits.vendor_subtitle }}</p>
+        </div>
         <div class="benefits-grid">
             {% for card in site.data.benefits.vendor_cards %}
             <div class="benefit-card vendor-card">
@@ -124,6 +131,7 @@ layout: default
         <div class="dual-flow">
             <div class="flow-block">
                 <h3 class="flow-block-title">{{ site.data.how_it_works.customer_title }}</h3>
+                <p class="persona-app-label">{{ site.data.how_it_works.customer_subtitle }}</p>
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.customer_steps %}
                     <div class="flow-step">
@@ -140,6 +148,7 @@ layout: default
 
             <div class="flow-block">
                 <h3 class="flow-block-title">{{ site.data.how_it_works.vendor_title }}</h3>
+                <p class="persona-app-label">{{ site.data.how_it_works.vendor_subtitle }}</p>
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.vendor_steps %}
                     <div class="flow-step vendor-step">

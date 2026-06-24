@@ -6,11 +6,12 @@ subtitle: "ghantiGo is built for both sides of the lane — those who sell or se
 
 # Customer-facing benefits
 customer_title: "For customers"
+customer_subtitle: "On the ghantiGo app for customers"
 customer_cards:
   - icon: "🔔"
     heading: "Digital ghanti"
     hindi: "फोन पे घंटी"
-    description: "Get notified when your trusted local seller or repairwala is near your gate or chowk."
+    description: "Get notified when your regular moving seller or repairwala is near your gate or chowk."
 
   - icon: "🚶"
     heading: "Walk, don't drive"
@@ -29,6 +30,7 @@ customer_cards:
 
 # Vendor / seller-facing benefits
 vendor_title: "For feriwale & service providers"
+vendor_subtitle: "On the ghantiGo app for sellers"
 vendor_cards:
   - icon: "📣"
     heading: "Go LIVE"

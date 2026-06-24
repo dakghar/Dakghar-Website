@@ -5,10 +5,11 @@ title: "How ghantiGo works"
 subtitle: "Two sides of the same lane. Sellers go live. Customers get the ghanti."
 
 customer_title: "For customers"
+customer_subtitle: "On the ghantiGo app for customers"
 customer_steps:
   - heading: "Follow"
     hindi: "फॉलो करो"
-    description: "Follow the sellers, repairwale, and services you care about — kulfi, sabzi, bike wash, chair repair."
+    description: "Follow the moving sellers and service providers you care about — kulfi, sabzi, bike wash, chair repair."
 
   - heading: "Get the ghanti"
     hindi: "फोन पे घंटी"
@@ -19,6 +20,7 @@ customer_steps:
     description: "They’re right there at your gate or chowk. Walk over, choose, buy, or get it repaired."
 
 vendor_title: "For sellers & service providers"
+vendor_subtitle: "On the ghantiGo app for sellers"
 vendor_steps:
   - heading: "Upload today"
     hindi: "आज का सामना"

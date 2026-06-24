@@ -345,10 +345,18 @@ body {
 }
 
 /* Benefits Cards */
-.benefits-section .persona-title {
+.benefits-section .persona-block {
     text-align: center;
-    font-size: 1.3rem;
     margin-bottom: 25px;
+}
+
+.benefits-section .persona-block.vendor-block {
+    margin-top: 50px;
+}
+
+.benefits-section .persona-title {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
     color: #555;
     font-weight: 600;
 }
@@ -359,7 +367,13 @@ body {
 
 .benefits-section .persona-title.vendor-title {
     color: #2E7D32;
-    margin-top: 50px;
+}
+
+.persona-app-label {
+    font-size: 0.95rem;
+    color: #777;
+    font-weight: 500;
+    margin: 0;
 }
 
 .benefits-grid {
@@ -439,9 +453,17 @@ body {
 .flow-block-title {
     text-align: center;
     font-size: 1.25rem;
-    margin-bottom: 25px;
+    margin-bottom: 6px;
     color: #333;
     font-weight: 600;
+}
+
+.flow-block .persona-app-label {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+    color: #777;
+    font-weight: 500;
 }
 
 .flow-steps {
