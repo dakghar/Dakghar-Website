@@ -4,30 +4,13 @@ layout: default
 <!-- Hero Section: Digital Ghanti for Moving Sellers -->
 <section class="hero">
     <div class="container">
-        <p class="brand-tagline">{{ site.data.site.tagline }}</p>
-        <div class="brand">{{ site.data.site.brand_name }}</div>
         <h1>{{ site.data.hero.headline_hindi }}</h1>
-        <h2 class="hero-subheadline">{{ site.data.hero.headline }}</h2>
-        <p class="vendor-types">{{ site.data.hero.vendor_types }}</p>
         <p class="hero-description">{{ site.data.hero.subhead }}</p>
-
-        <div class="video-hero-container">
-            <iframe
-                src="https://www.youtube.com/embed/{{ site.data.hero.video.youtube_id }}?autoplay={% if site.data.hero.video.autoplay %}1{% else %}0{% endif %}&mute={% if site.data.hero.video.mute %}1{% else %}0{% endif %}&loop={% if site.data.hero.video.loop %}1{% else %}0{% endif %}&playlist={{ site.data.hero.video.youtube_id }}"
-                title="{{ site.data.hero.video.title }}"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <p class="video-caption">{{ site.data.hero.caption }}</p>
 
         <p class="early-access-badge">🚀 Early access in Pune — WhatsApp us to join</p>
 
         {% include whatsapp_btn.html %}
         <p class="launch-location">{{ site.data.hero.launch_message }}</p>
-
-        <p class="company-note">{{ site.data.site.brand_name }} is a product of {{ site.data.site.company_name }}.</p>
     </div>
 </section>
 
@@ -43,9 +26,6 @@ layout: default
             <p>
                 ghantiGo is a digital notification platform with mobile apps for customers and moving sellers.
                 It is operated by <strong>{{ site.data.site.company_name }}</strong>.
-                We connect moving sellers and service providers — such as repairwale, kulfi carts, sabziwalas,
-                sugarcane juice carts, bike washers, and village feriwale — with nearby customers through live alerts
-                and voice broadcasts.
             </p>
         </div>
     </div>
@@ -68,18 +48,35 @@ layout: default
     </div>
 </section>
 
+<!-- Vendor Testimonials -->
+{% if site.data.testimonials.enabled %}
+<section class="section section-warm">
+    <div class="container">
+        <h2>{{ site.data.testimonials.title }}</h2>
+        <p class="section-subtitle">{{ site.data.testimonials.subtitle }}</p>
+        <div class="use-cases-grid">
+            {% for item in site.data.testimonials.items %}
+            <div class="use-case-card">
+                <div class="use-case-photo">
+                    <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
+                </div>
+                {% if item.caption %}<p class="caption">{{ item.caption }}</p>{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
 <!-- Use-Case Examples -->
 <section class="section section-warm use-cases-section">
     <div class="container">
-        <h2>For every moving seller & service</h2>
+        <h2>For moving sellers & services</h2>
         <p class="section-subtitle">ghantiGo works for anyone who comes to your lane, chowk, society, or village — instead of waiting for you to find them.</p>
         <div class="use-cases-grid">
-            <div class="use-case-card"><span class="use-case-icon">🛠️</span><h4>Repairwala</h4><p>Mixer, chair, cycle, phone — fix near home</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🍦</span><h4>Kulfi cart</h4><p>Frozen treats that come to your gate</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🧃</span><h4>Sugarcane juice</h4><p>Fresh juice cart on the move</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🥬</span><h4>Sabzi & farm tempo</h4><p>Better prices without the middleman</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🚿</span><h4>Mobile bike washer</h4><p>Service van at your society</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🚚</span><h4>Village feriwala</h4><p>Today your village, tomorrow the next</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🛠️</span><h4>Repair & services</h4><p>Mixer, chair, cycle, bike wash, knife sharpening</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🥬</span><h4>Fresh food & goods</h4><p>Kulfi, jhalmuri, sabzi, sugarcane, iron kadhai</p></div>
+            <div class="use-case-card"><span class="use-case-icon">🚚</span><h4>Village & tempo routes</h4><p>Farm tempos, rotating feriwale, service vans</p></div>
         </div>
     </div>
 </section>
@@ -111,7 +108,7 @@ layout: default
         </div>
         <div class="benefits-grid">
             {% for card in site.data.benefits.vendor_cards %}
-            <div class="benefit-card vendor-card">
+            <div class="benefit-card">
                 <div class="benefit-icon">{{ card.icon }}</div>
                 <h3>{{ card.heading }}</h3>
                 <p class="hindi">{{ card.hindi }}</p>
@@ -135,7 +132,7 @@ layout: default
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.customer_steps %}
                     <div class="flow-step">
-                        <div class="step-number">{{ forloop.index }}</div>
+                        <div class="step-number">0{{ forloop.index }}</div>
                         <div class="step-content">
                             <h4>{{ step.heading }}</h4>
                             <p class="hindi">{{ step.hindi }}</p>
@@ -151,8 +148,8 @@ layout: default
                 <p class="persona-app-label">{{ site.data.how_it_works.vendor_subtitle }}</p>
                 <div class="flow-steps">
                     {% for step in site.data.how_it_works.vendor_steps %}
-                    <div class="flow-step vendor-step">
-                        <div class="step-number">{{ forloop.index }}</div>
+                    <div class="flow-step">
+                        <div class="step-number">0{{ forloop.index }}</div>
                         <div class="step-content">
                             <h4>{{ step.heading }}</h4>
                             <p class="hindi">{{ step.hindi }}</p>
@@ -166,64 +163,6 @@ layout: default
     </div>
 </section>
 
-<!-- Vendor Testimonials -->
-{% if site.data.testimonials.enabled %}
-<section class="section section-white">
-    <div class="container">
-        <h2>{{ site.data.testimonials.title }}</h2>
-        <p class="section-subtitle">{{ site.data.testimonials.subtitle }}</p>
-        <div class="use-cases-grid">
-            {% for item in site.data.testimonials.items %}
-            <div class="use-case-card">
-                <div class="use-case-photo">
-                    <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
-                </div>
-                {% if item.caption %}<p class="caption">{{ item.caption }}</p>{% endif %}
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-<!-- Future Vision Section -->
-<section class="section section-white vision-section">
-    <div class="container">
-        <h2>Built for every kind of moving commerce</h2>
-        <p class="section-subtitle">ghantiGo starts with your lane and chowk. The future is bigger.</p>
-        <div class="vision-grid">
-            <div class="vision-card">
-                <span class="vision-icon">🚐</span>
-                <h4>Brand-authorized service vans</h4>
-                <p>Authorized repair and wash rounds announced neighborhood by neighborhood.</p>
-            </div>
-            <div class="vision-card">
-                <span class="vision-icon">🚚</span>
-                <h4>Direct-to-consumer tempos</h4>
-                <p>Farmers and makers selling directly, skipping middlemen and shops.</p>
-            </div>
-            <div class="vision-card">
-                <span class="vision-icon">🏘️</span>
-                <h4>Village-to-village feriwale</h4>
-                <p>Rotating sellers can let every village know “today is your day.”</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Values / Movement Section -->
-<section class="section section-warm values-section">
-    <div class="container">
-        <h2>Walk a little. Fix, eat, save.</h2>
-        <p class="section-subtitle">ghantiGo makes local commerce work again — for your wallet, your neighborhood, and the planet.</p>
-        <div class="values-grid">
-            <div class="value-item"><span>💰</span><p><strong>Save money</strong> by buying local and repairing instead of replacing.</p></div>
-            <div class="value-item"><span>🚗</span><p><strong>Skip city trips</strong> and the traffic, parking, and fuel they waste.</p></div>
-            <div class="value-item"><span>🌍</span><p><strong>Waste less</strong> — one repair at a time, one less item in the landfill.</p></div>
-            <div class="value-item"><span>🤝</span><p><strong>Support local</strong> feriwale, repairwale, and moving sellers you already know.</p></div>
-        </div>
-    </div>
-</section>
 
 <!-- Screenshots Section (conditional) -->
 {% if site.data.screenshots.enabled %}
@@ -247,7 +186,7 @@ layout: default
     <div class="container">
         <h2>Get {{ site.data.site.app_name }} early access</h2>
         {% include whatsapp_btn.html %}
-        <p class="cta-subtext">Early access only. WhatsApp us to join before public launch.</p>
-        <p class="cta-location">{{ site.data.hero.launch_message }}</p>
+        <p class="cta-subtext">WhatsApp us. We’ll reply within a day to add you to the early access list.</p>
+        <p class="cta-location">Limited early access in Pune.</p>
     </div>
 </section>

@@ -366,7 +366,7 @@ body {
 }
 
 .benefits-section .persona-title.vendor-title {
-    color: #2E7D32;
+    color: #555;
 }
 
 .persona-app-label {
@@ -398,11 +398,6 @@ body {
     transform: translateY(-5px);
 }
 
-.benefit-card.vendor-card {
-    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.08);
-    border: 1px solid rgba(46, 125, 50, 0.12);
-}
-
 .benefit-icon {
     font-size: 2.4rem;
     margin-bottom: 14px;
@@ -414,18 +409,10 @@ body {
     margin-bottom: 6px;
 }
 
-.benefit-card.vendor-card h3 {
-    color: #2E7D32;
-}
-
 .benefit-card .hindi {
     font-size: 0.9rem;
     color: #FF6B35;
     margin-bottom: 8px;
-}
-
-.benefit-card.vendor-card .hindi {
-    color: #2E7D32;
 }
 
 .benefit-card p {
@@ -481,26 +468,14 @@ body {
     border-radius: 12px;
 }
 
-.flow-step.vendor-step {
-    background: #F1F8E9;
-}
-
 .step-number {
-    width: 42px;
-    height: 42px;
-    background: linear-gradient(135deg, #FF9933, #FF6B35);
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.1rem;
+    width: 32px;
     flex-shrink: 0;
-}
-
-.flow-step.vendor-step .step-number {
-    background: linear-gradient(135deg, #66BB6A, #2E7D32);
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #FF6B35;
+    text-align: right;
+    padding-top: 4px;
 }
 
 .step-content h4 {
@@ -513,10 +488,6 @@ body {
     font-size: 0.9rem;
     color: #FF6B35;
     margin-bottom: 5px;
-}
-
-.flow-step.vendor-step .step-content .hindi {
-    color: #2E7D32;
 }
 
 .step-content p {
@@ -697,28 +668,38 @@ body {
     background: #2D2D2D;
     color: white;
     text-align: center;
-    padding: 45px 20px;
+    padding: 40px 20px;
 }
 
-.footer-brand {
-    margin-bottom: 15px;
+.footer-row {
+    margin-bottom: 14px;
+}
+
+.footer-row:last-child {
+    margin-bottom: 0;
+}
+
+.footer-brand-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .footer-app-name {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: #FF9933;
-    margin-bottom: 6px;
+}
+
+.footer-separator {
+    color: rgba(255, 255, 255, 0.4);
 }
 
 .footer-company {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.75);
-    margin-bottom: 5px;
-}
-
-.footer-links {
-    margin-bottom: 12px;
 }
 
 .footer-links a {
@@ -734,7 +715,6 @@ body {
 }
 
 .footer-social {
-    margin-bottom: 16px;
     display: flex;
     justify-content: center;
     gap: 18px;
@@ -742,7 +722,7 @@ body {
 }
 
 .footer-social a {
-    color: #FF9933;
+    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     font-size: 0.9rem;
     font-weight: 500;
@@ -750,15 +730,15 @@ body {
 }
 
 .footer-social a:hover {
-    color: white;
+    color: #FF9933;
 }
 
-.footer-content {
-    font-size: 0.95rem;
+.footer-credit {
+    font-size: 0.9rem;
     color: #999;
 }
 
-.footer-content a {
+.footer-credit a {
     color: #FF9933;
     text-decoration: none;
 }
@@ -769,20 +749,8 @@ body {
         padding: 80px 20px 55px;
     }
 
-    .hero .brand {
-        font-size: 2.2rem;
-    }
-
     .hero h1 {
         font-size: 1.8rem;
-    }
-
-    .hero .hero-subheadline {
-        font-size: 1.25rem;
-    }
-
-    .hero .vendor-types {
-        font-size: 0.95rem;
     }
 
     .hero .hero-description {
@@ -809,12 +777,14 @@ body {
     }
 
     .use-cases-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 14px;
+        max-width: 400px;
+        margin: 0 auto;
     }
 
     .use-case-card {
-        padding: 14px;
+        padding: 18px;
     }
 
     .use-case-photo {
@@ -822,7 +792,7 @@ body {
     }
 
     .use-case-card .caption {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
     .use-case-icon {
@@ -830,11 +800,11 @@ body {
     }
 
     .use-case-card h4 {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     .use-case-card p {
-        font-size: 0.82rem;
+        font-size: 0.9rem;
     }
 
     .hero .early-access-badge {
