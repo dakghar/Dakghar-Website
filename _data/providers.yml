@@ -1,0 +1,36 @@
+# Providers — everyone who comes to your lane, in one section.
+#
+# Absorbs what used to be three separate sections (use-case cards, photo
+# testimonials, and a standalone Carnival block). They were all answering the
+# same question, so they are one answer now, split only by rhythm:
+#
+#   recurring — a feriwala comes back every week
+#   occasional — a shibir happens once
+#
+# That keeps the customer's mental model at two things, not three. The
+# photographs do the work here; real faces from real lanes beat icon cards, and
+# they are the only human content on the page.
+
+title: "Who comes to your lane"
+subtitle: "Some come every week. Some come once. Ghanti+ tells you when either is at your gate."
+
+recurring:
+  heading: "Feriwale — every week"
+  description: "Repair and services (mixer, chair, cycle, bike wash, knife sharpening), fresh food and goods (kulfi, jhalmuri, sabzi, sugarcane, iron kadhai), and the village tempo and service-van rounds."
+  photos:
+    - image: "/assets/images/feriwale/iron-utensils.webp"
+      alt: "Iron utensils seller"
+      caption: "The feriwala who sells iron kadhai and tawas — iron cookware, good for health."
+
+    - image: "/assets/images/feriwale/jhalmuri-seller.webp"
+      alt: "Jhalmuri seller with cart"
+      caption: "The jhalmuri wala whose cart brings evening snacks to your chowk."
+
+    - image: "/assets/images/feriwale/knife-sharpner.webp"
+      alt: "Knife sharpener at work"
+      caption: "The knife sharpener who visits your society with his grinding wheel."
+
+occasional:
+  heading: "Shibirs & melas — once"
+  description: "Health, dental, eye and Aadhaar camps. Fairs, exhibitions and society events. Announced before the day — with the ground, the timing, and what to bring — so you can plan around them instead of hearing about it afterwards."
+  organiser_note: "Running a camp or a mela? Post it on the Carnival app with its date, place and poster. Every household in that area sees it — no printing, no pasting, no loudspeaker round."

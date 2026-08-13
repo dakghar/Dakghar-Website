@@ -8,8 +8,8 @@ data_key: privacy_policy
 <h2>1. Company Identification</h2>
 <p>
     <strong>{{ site.data.site.company_name }}</strong> (DUNS: {{ site.data.site.duns }}) operates the
-    <strong>{{ site.data.site.app_name }}</strong> mobile application, a street vendor-customer coordination
-    platform available at <a href="{{ site.data.site.url }}">VisibleChain.com</a>.
+    <strong>{{ site.data.site.app_name }}</strong> mobile application, a street peddler-customer coordination
+    platform available at <a href="{{ site.data.site.url }}">Ghanti+</a>.
 </p>
 <p>
     In this Privacy Policy, "we," "us," and "our" refer to {{ site.data.site.company_name }}, and
@@ -24,17 +24,17 @@ data_key: privacy_policy
     verifying your identity when you create an account or sign in.
 </p>
 
-<h3>b. Vendor GPS Location</h3>
+<h3>b. Peddler GPS Location</h3>
 <p>
-    If you register as a vendor, we collect your real-time GPS location to enable live location
-    broadcast to nearby customers. Location data is collected while the vendor actively broadcasts
+    If you register as a peddler, we collect your real-time GPS location to enable live location
+    broadcast to nearby customers. Location data is collected while the peddler actively broadcasts
     their availability through the app.
 </p>
 
 <h3>c. Customer Locality Information</h3>
 <p>
     If you register as a customer, we collect your locality information to match you with nearby
-    vendors and display relevant vendor availability in your area.
+    peddlers and display relevant peddler availability in your area.
 </p>
 
 <h3>d. Profile Information</h3>
@@ -42,13 +42,7 @@ data_key: privacy_policy
     We collect your name and other profile details you provide when setting up your account.
 </p>
 
-<h3>e. Transaction Data</h3>
-<p>
-    We collect data related to coin purchases, coin usage, and payment transactions processed through
-    our payment partners. This includes transaction amounts, timestamps, and payment confirmation details.
-</p>
-
-<h3>f. Usage Data</h3>
+<h3>e. Usage Data</h3>
 <p>
     We automatically collect information about how you interact with the app, including:
 </p>
@@ -58,24 +52,18 @@ data_key: privacy_policy
     <li>Log data (access times, error logs, referring pages)</li>
 </ul>
 
-<h3>g. Ratings and Reviews</h3>
-<p>
-    We collect ratings and reviews that you submit about vendors or the service, which may be
-    displayed publicly within the app.
-</p>
-
-<h3>h. Communications</h3>
+<h3>f. Communications</h3>
 <p>
     We collect any messages or communications you send to us through in-app support, email, or
-    other channels.
+    other means.
 </p>
 
-<h3>i. Voice Broadcasts</h3>
+<h3>g. Voice Broadcasts</h3>
 <p>
-    If you register as a vendor, you may use your device's microphone to record short voice
+    If you register as a peddler, you may use your device's microphone to record short voice
     broadcast messages for your customers. These audio recordings are uploaded to our servers
-    and delivered to customers who follow your channel. Voice recordings are retained for
-    {{ site.data.legal.data_retention.location_days }} days and then automatically deleted.
+    and delivered to the customers who follow you. Recordings are kept for as long as your
+    account is active, and are removed when you delete the recording or your account.
 </p>
 
 <h2>3. How We Use Your Information</h2>
@@ -85,11 +73,11 @@ data_key: privacy_policy
         notifications, and communicate important account-related information.
     </li>
     <li>
-        <strong>Vendor GPS Location:</strong> To enable real-time location broadcast so customers
-        can find nearby vendors, and to facilitate vendor-customer coordination.
+        <strong>Peddler GPS Location:</strong> To enable real-time location broadcast so customers
+        can find nearby peddlers, and to facilitate peddler-customer coordination.
     </li>
     <li>
-        <strong>Customer Locality:</strong> To display relevant vendors in your area and personalise
+        <strong>Customer Locality:</strong> To display relevant peddlers in your area and personalise
         your experience based on your neighbourhood.
     </li>
     <li>
@@ -97,25 +85,16 @@ data_key: privacy_policy
         personalised experience.
     </li>
     <li>
-        <strong>Transaction Data:</strong> To process coin purchases, manage your coin balance,
-        facilitate payments through our payment partners, and maintain financial records as required
-        by law.
-    </li>
-    <li>
         <strong>Usage Data:</strong> To improve app performance, diagnose technical issues, understand
         usage patterns, and enhance user experience.
-    </li>
-    <li>
-        <strong>Ratings and Reviews:</strong> To maintain service quality, provide feedback to vendors,
-        and help customers make informed choices.
     </li>
     <li>
         <strong>Communications:</strong> To respond to your inquiries, resolve support requests, and
         improve our services.
     </li>
     <li>
-        <strong>Voice Broadcasts:</strong> To enable vendors to send audio announcements (such as
-        arrival alerts or product availability) to customers who follow their channel.
+        <strong>Voice Broadcasts:</strong> To enable peddlers to send audio announcements (such as
+        arrival alerts or product availability) to the customers who follow them.
     </li>
 </ul>
 
@@ -132,21 +111,7 @@ data_key: privacy_policy
     solely for SMS delivery.
 </p>
 
-<h3>b. Payment Processors</h3>
-<p>
-    We use <strong>Razorpay</strong> and <strong>PayU</strong> to process coin purchase payments.
-    When you make a payment, your transaction details are processed by these providers in accordance
-    with their respective privacy policies. We do not store your full payment instrument details
-    (such as card numbers or UPI PINs) on our servers.
-</p>
-
-<h3>c. Analytics</h3>
-<p>
-    We use <strong>{{ site.data.legal.third_parties.analytics }}</strong> to collect anonymised usage
-    data to understand how the app is used and to improve our services.
-</p>
-
-<h3>d. Cloud Infrastructure</h3>
+<h3>b. Cloud Infrastructure</h3>
 <p>
     Our app data is hosted on <strong>{{ site.data.legal.third_parties.cloud_provider }}</strong>.
     All data stored on our cloud infrastructure is subject to the security measures described in
@@ -156,6 +121,11 @@ data_key: privacy_policy
 <p>
     We require all third-party service providers to process your data only as instructed by us and
     in compliance with applicable data protection laws.
+</p>
+<p>
+    <strong>We do not use any third-party analytics or advertising SDK.</strong> Usage analytics are
+    collected first-party, on our own infrastructure, and are never sold or shared with advertisers.
+    We do not integrate a payment processor, because the App is free to use.
 </p>
 
 <h2>5. Data Security</h2>
@@ -192,13 +162,13 @@ data_key: privacy_policy
 <h3>Retention Periods</h3>
 <ul>
     <li>
-        <strong>Location Data:</strong> Vendor GPS location data is retained for
+        <strong>Location Data:</strong> Peddler GPS location data is retained for
         {{ site.data.legal.data_retention.location_days }} days after collection.
     </li>
     <li>
-        <strong>Transaction Data:</strong> Financial transaction records are retained for
-        {{ site.data.legal.data_retention.transaction_days }} days (1 year) to comply with
-        applicable financial record-keeping requirements.
+        <strong>Usage Data:</strong> App interaction and device data is retained for
+        {{ site.data.legal.data_retention.usage_days }} days, after which it is moved to an
+        archive used only for aggregate reporting.
     </li>
     <li>
         <strong>Security Logs:</strong> Retained for {{ site.data.legal.data_retention.security_logs_days }}
@@ -219,7 +189,7 @@ data_key: privacy_policy
         and follow the on-screen instructions.
     </li>
     <li>
-        <strong>Web:</strong> Visit <a href="{{ site.data.site.url }}/account-deletion/">VisibleChain.com/account-deletion/</a>
+        <strong>Web:</strong> Visit <a href="{{ site.data.site.url }}/account-deletion/">Ghanti+/account-deletion/</a>
         and submit a deletion request.
     </li>
     <li>
@@ -315,11 +285,11 @@ data_key: privacy_policy
 <p>The {{ site.data.site.app_name }} app requests the following device permissions:</p>
 <ul>
     <li>
-        <strong>Location (Coarse):</strong> To show vendors nearby places and enable live location
+        <strong>Location (Coarse):</strong> To show peddlers nearby places and enable live location
         broadcast to customers.
     </li>
     <li>
-        <strong>Microphone:</strong> To allow vendors to record voice broadcast messages for their
+        <strong>Microphone:</strong> To allow peddlers to record voice broadcast messages for their
         customers. The microphone is only accessed when you actively choose to record a voice
         broadcast. We do not access the microphone in the background.
     </li>
@@ -369,7 +339,7 @@ data_key: privacy_policy
         <strong>Email:</strong> <a href="mailto:{{ site.data.site.contact_email }}">{{ site.data.site.contact_email }}</a>
     </li>
     <li>
-        <strong>Website:</strong> <a href="{{ site.data.site.url }}">VisibleChain.com</a>
+        <strong>Website:</strong> <a href="{{ site.data.site.url }}">Ghanti+</a>
     </li>
     <li>
         <strong>Company:</strong> {{ site.data.site.company_name }}
