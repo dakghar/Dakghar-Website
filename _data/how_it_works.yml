@@ -1,35 +1,41 @@
-# How It Works section
-# Add, remove, or reorder steps by editing this array
+# How It Works — the ONE place the customer/provider split lives.
+#
+# It used to appear twice: a Benefits grid split by persona, then this section
+# split by persona again, back to back. Same division, overlapping content, no
+# new information the second time. The benefit copy now lives inside the step
+# descriptions — the step says what you do, the description says why it's worth
+# doing. Three steps a side is the ceiling; a fourth means something is being
+# explained that should be shown instead.
 
-title: "How ghantiGo works"
-subtitle: "Two sides of the same lane. Sellers go live. Customers get the ghanti."
+title: "How Ghanti+ works"
+subtitle: "Two sides of the same lane. Feriwale go live. Customers get the ghanti."
 
 customer_title: "For customers"
-customer_subtitle: "On the ghantiGo app for customers"
+customer_subtitle: "On the Ghanti+ app for customers"
 customer_steps:
   - heading: "Follow"
     hindi: "फॉलो करो"
-    description: "Follow the moving sellers and service providers you care about — kulfi, sabzi, bike wash, chair repair."
+    description: "Follow the feriwale you already buy from — kulfi, sabzi, bike wash, chair repair. They become your regulars, and you stop missing them."
 
   - heading: "Get the ghanti"
     hindi: "फोन पे घंटी"
-    description: "When they go LIVE near your area, ghantiGo rings a digital bell on your phone."
+    description: "When they go LIVE near your area, Ghanti+ rings a digital bell on your phone. No searching, no waiting at the window."
 
   - heading: "Walk over"
     hindi: "जाके ले आओ"
-    description: "They’re right there at your gate or chowk. Walk over, choose, buy, or get it repaired."
+    description: "They're at your gate or chowk, 200 metres away. Local prices, no delivery fee, no middleman — and repairing beats replacing."
 
-vendor_title: "For sellers & service providers"
-vendor_subtitle: "On the ghantiGo app for sellers"
-vendor_steps:
+peddler_title: "For feriwale & service providers"
+peddler_subtitle: "On the Ghanti+ app for sellers"
+peddler_steps:
   - heading: "Upload today"
-    hindi: "आज का सामना"
-    description: "Share a photo of what you’re selling or the repairs you can do today."
+    hindi: "आज का सामान"
+    description: "Share a photo of what you've brought today, or the repairs you can do — so customers know before you arrive."
 
   - heading: "Record voice"
     hindi: "आवाज़ बोलो"
-    description: "Record a short voice broadcast in your own language and style."
+    description: "Record a short voice broadcast in your own language and style. Your voice, not a form."
 
   - heading: "Go LIVE"
     hindi: "लाइव जाओ"
-    description: "Tap Go LIVE when you arrive. Customers who follow you get the digital ghanti instantly."
+    description: "Tap Go LIVE when you reach the gate. Everyone following you gets the ghanti instantly — no shouting, no hoping someone hears the bell."

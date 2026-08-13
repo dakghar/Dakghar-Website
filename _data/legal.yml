@@ -1,45 +1,57 @@
 # Legal information for Privacy Policy, Terms, and Support pages
-# Edit these values before submitting to Google Play Store and DLT registration
+#
+# Values here are stated as fact in published legal documents. Do not put a
+# provider or a retention period here unless it is actually implemented —
+# over-disclosure is a DPDP problem in its own right.
+#
+# Anything still marked [UPDATE: ...] is a business fact only you can supply.
+# The site must not be published with those placeholders live.
 
-# Grievance Officer (required under DPDP Act)
+# Grievance Officer (mandatory under the DPDP Act)
 grievance_officer:
-  name: "[UPDATE: Grievance Officer name]"
+  name: "[UPDATE: Grievance Officer full name]"
   designation: "Grievance Officer"
-  email: "[UPDATE: grievance@ghantigo.com]" # Update with actual email
+  email: "[UPDATE: grievance@ghantiplus.com]"
   response_time: "90 days" # Maximum under DPDP Act
 
 # Account deletion
 account_deletion:
-  email: "[UPDATE: delete@ghantigo.com]" # Update with actual email
+  email: "[UPDATE: delete@ghantiplus.com]"
   processing_time: "30 days"
   in_app_path:
-    - "Open the ghantiGo app"
+    - "Open the Ghanti+ app"
     - "Go to Settings"
     - "Tap Account"
     - "Tap Delete Account"
     - "Confirm deletion"
 
-# Third-party services (must be disclosed in Privacy Policy)
+# Third-party services (must be disclosed in Privacy Policy).
+# Verified against the backend — do not add a provider that isn't wired up.
 third_parties:
-  sms_gateway: "[UPDATE: SMS gateway provider name]"
-  payment_processors:
-    - "Razorpay"
-    - "PayU"
-  analytics: "[UPDATE: Analytics SDK name]"
-  cloud_provider: "[UPDATE: Cloud hosting provider]"
+  sms_gateway: "MSG91" # ADR-014; OTP + transactional delivery
+  cloud_provider: "CloudPe" # Application hosting and S3-compatible media storage
+  # No third-party analytics SDK is used. Usage analytics are first-party
+  # (`app_events`), collected on our own infrastructure — see the Analytics
+  # section of the Privacy Policy.
+  # No payment processor is integrated. The app is free; see Terms §4.
 
-# Data retention
+# Data retention — each figure below matches a worker that actually runs.
 data_retention:
-  location_days: "[UPDATE: Number of days location data is retained]"
-  transaction_days: 365 # 1 year for financial records
+  # Dakghar.Workers.ArchivePresencePulses — @retention_days 30.
+  # Live location moves to an archive table after this; it is not deleted.
+  location_days: 30
+  # Dakghar.Workers.ArchiveAppEvents — @retention_days 180.
+  usage_days: 180
   security_logs_days: 365 # Minimum 1 year per DPDP Rules 2025
   account_data_after_deletion_days: 90 # Grace period for legal obligations
 
-# Policy dates
+# Policy dates — bumped when the substance changes, which it did on this pass
+# (removed the Coin economy, ratings/reviews collection, and payment processors,
+# none of which existed).
 privacy_policy:
-  effective_date: "[UPDATE: 2026-06-24]"
-  last_updated: "[UPDATE: 2026-06-24]"
+  effective_date: "2026-08-13"
+  last_updated: "2026-08-13"
 
 terms:
-  effective_date: "[UPDATE: 2026-06-24]"
-  last_updated: "[UPDATE: 2026-06-24]"
+  effective_date: "2026-08-13"
+  last_updated: "2026-08-13"

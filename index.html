@@ -1,10 +1,27 @@
 ---
 layout: default
 ---
-<!-- Hero Section: Digital Ghanti for Moving Sellers -->
+{%- comment -%}
+  Five sections, in this order, and the order is the argument:
+
+    1. Hero        — what it is, and one thing to do
+    2. Problem     — why the old ghanti stopped reaching (+ the story video)
+    3. How it works— the ONLY customer/provider split on the page
+    4. Providers   — everyone who comes to your lane, recurring and one-off
+    5. CTA         — the same single action as the hero
+
+  This replaced a ten-section page that split customer/provider twice in a row
+  (a Benefits grid, then How It Works) and set up its premise three times. If a
+  new section is proposed, the question to answer first is which of these five
+  it belongs inside — a sixth is almost always a sign that one of these is not
+  doing its job.
+{%- endcomment -%}
+
+<!-- 1. Hero -->
 <section class="hero">
     <div class="container">
         <h1>{{ site.data.hero.headline_hindi }}</h1>
+        <p class="hero-positioning">{{ site.data.hero.positioning }}</p>
         <p class="hero-description">{{ site.data.hero.subhead }}</p>
 
         <p class="early-access-badge">🚀 Early access in Pune — WhatsApp us to join</p>
@@ -14,40 +31,7 @@ layout: default
     </div>
 </section>
 
-<!-- What ghantiGo Is / Is Not -->
-<section class="section section-warm what-is-section">
-    <div class="container">
-        <h2>Not a map. Not a shop. Just a digital ghanti.</h2>
-        <div class="what-is-content">
-            <p>
-                A map tells you <strong>where</strong> a shop is. ghantiGo tells you <strong>when</strong> the kulfi cart,
-                repairwala, or bike washer is actually at your gate.
-            </p>
-            <p>
-                ghantiGo is a digital notification platform with mobile apps for customers and moving sellers,
-                built by <strong>{{ site.data.site.company_name }}</strong>.
-            </p>
-        </div>
-    </div>
-</section>
-
-<!-- Explainer Video -->
-<section class="section section-white video-section">
-    <div class="container">
-        <h2>{{ site.data.hero.caption }}</h2>
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/{{ site.data.hero.video.youtube_id }}"
-                title="{{ site.data.hero.video.title }}"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
-
-<!-- Story / Challenge Section: Why the Old Ghanti Stopped Reaching -->
+<!-- 2. The problem, and the story that explains it -->
 <section class="section section-warm challenge-section">
     <div class="container">
         <h2>{{ site.data.challenges.title }}</h2>
@@ -61,82 +45,22 @@ layout: default
             {% endfor %}
         </div>
         <p class="challenge-bridge">{{ site.data.challenges.bridge }}</p>
-    </div>
-</section>
 
-<!-- Vendor Testimonials -->
-{% if site.data.testimonials.enabled %}
-<section class="section section-warm">
-    <div class="container">
-        <h2>{{ site.data.testimonials.title }}</h2>
-        <p class="section-subtitle">{{ site.data.testimonials.subtitle }}</p>
-        <div class="use-cases-grid">
-            {% for item in site.data.testimonials.items %}
-            <div class="use-case-card">
-                <div class="use-case-photo">
-                    <img src="{{ item.image }}" alt="{{ item.alt }}" loading="lazy">
-                </div>
-                {% if item.caption %}<p class="caption">{{ item.caption }}</p>{% endif %}
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-{% endif %}
-
-<!-- Use-Case Examples -->
-<section class="section section-warm use-cases-section">
-    <div class="container">
-        <h2>For moving sellers & services</h2>
-        <p class="section-subtitle">ghantiGo works for anyone who comes to your lane, chowk, society, or village — instead of waiting for you to find them.</p>
-        <div class="use-cases-grid">
-            <div class="use-case-card"><span class="use-case-icon">🛠️</span><h4>Repair & services</h4><p>Mixer, chair, cycle, bike wash, knife sharpening</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🥬</span><h4>Fresh food & goods</h4><p>Kulfi, jhalmuri, sabzi, sugarcane, iron kadhai</p></div>
-            <div class="use-case-card"><span class="use-case-icon">🚚</span><h4>Village & tempo routes</h4><p>Farm tempos, rotating feriwale, service vans</p></div>
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube.com/embed/{{ site.data.hero.video.youtube_id }}"
+                title="{{ site.data.hero.video.title }}"
+                frameborder="0"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
         </div>
     </div>
 </section>
 
-<!-- Benefits Section: Split by Persona -->
-<section class="section section-white benefits-section">
-    <div class="container">
-        <h2>{{ site.data.benefits.title }}</h2>
-        <p class="section-subtitle">{{ site.data.benefits.subtitle }}</p>
-
-        <div class="persona-block customer-block">
-          <h3 class="persona-title customer-title">{{ site.data.benefits.customer_title }}</h3>
-          <p class="persona-app-label">{{ site.data.benefits.customer_subtitle }}</p>
-        </div>
-        <div class="benefits-grid">
-            {% for card in site.data.benefits.customer_cards %}
-            <div class="benefit-card">
-                <div class="benefit-icon">{{ card.icon }}</div>
-                <h3>{{ card.heading }}</h3>
-                <p class="hindi">{{ card.hindi }}</p>
-                <p>{{ card.description }}</p>
-            </div>
-            {% endfor %}
-        </div>
-
-        <div class="persona-block vendor-block">
-          <h3 class="persona-title vendor-title">{{ site.data.benefits.vendor_title }}</h3>
-          <p class="persona-app-label">{{ site.data.benefits.vendor_subtitle }}</p>
-        </div>
-        <div class="benefits-grid">
-            {% for card in site.data.benefits.vendor_cards %}
-            <div class="benefit-card">
-                <div class="benefit-icon">{{ card.icon }}</div>
-                <h3>{{ card.heading }}</h3>
-                <p class="hindi">{{ card.hindi }}</p>
-                <p>{{ card.description }}</p>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
-
-<!-- How It Works: Dual Flow -->
-<section class="section section-warm how-it-works-section">
+<!-- 3. How it works — the one and only persona split -->
+<section class="section section-white how-it-works-section">
     <div class="container">
         <h2>{{ site.data.how_it_works.title }}</h2>
         <p class="section-subtitle">{{ site.data.how_it_works.subtitle }}</p>
@@ -160,10 +84,10 @@ layout: default
             </div>
 
             <div class="flow-block">
-                <h3 class="flow-block-title">{{ site.data.how_it_works.vendor_title }}</h3>
-                <p class="persona-app-label">{{ site.data.how_it_works.vendor_subtitle }}</p>
+                <h3 class="flow-block-title">{{ site.data.how_it_works.peddler_title }}</h3>
+                <p class="persona-app-label">{{ site.data.how_it_works.peddler_subtitle }}</p>
                 <div class="flow-steps">
-                    {% for step in site.data.how_it_works.vendor_steps %}
+                    {% for step in site.data.how_it_works.peddler_steps %}
                     <div class="flow-step">
                         <div class="step-number">0{{ forloop.index }}</div>
                         <div class="step-content">
@@ -179,25 +103,32 @@ layout: default
     </div>
 </section>
 
-
-<!-- Screenshots Section (conditional) -->
-{% if site.data.screenshots.enabled %}
-<section class="section section-white">
+<!-- 4. Providers — recurring and one-off, one idea -->
+<section class="section section-warm providers-section">
     <div class="container">
-        <h2>{{ site.data.screenshots.title }}</h2>
-        <div class="screenshots-grid">
-            {% for img in site.data.screenshots.images %}
-            <div class="screenshot-card">
-                <img src="{{ img.url }}" alt="{{ img.alt }}" loading="lazy">
-                {% if img.caption %}<p class="caption">{{ img.caption }}</p>{% endif %}
+        <h2>{{ site.data.providers.title }}</h2>
+        <p class="section-subtitle">{{ site.data.providers.subtitle }}</p>
+
+        <h3 class="provider-group-title">{{ site.data.providers.recurring.heading }}</h3>
+        <p class="provider-group-description">{{ site.data.providers.recurring.description }}</p>
+        <div class="use-cases-grid">
+            {% for photo in site.data.providers.recurring.photos %}
+            <div class="use-case-card">
+                <div class="use-case-photo">
+                    <img src="{{ photo.image }}" alt="{{ photo.alt }}" loading="lazy">
+                </div>
+                {% if photo.caption %}<p class="caption">{{ photo.caption }}</p>{% endif %}
             </div>
             {% endfor %}
         </div>
+
+        <h3 class="provider-group-title">{{ site.data.providers.occasional.heading }}</h3>
+        <p class="provider-group-description">{{ site.data.providers.occasional.description }}</p>
+        <p class="provider-organiser-note">{{ site.data.providers.occasional.organiser_note }}</p>
     </div>
 </section>
-{% endif %}
 
-<!-- Final CTA Section -->
+<!-- 5. One action, same as the hero -->
 <section class="cta-section">
     <div class="container">
         <h2>Get {{ site.data.site.app_name }} early access</h2>
